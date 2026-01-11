@@ -9,6 +9,7 @@ export class WeatherQueryDto {
   @IsString()
   city: string;
 
+  @IsOptional()
   @IsString()
   country?: string;
 }

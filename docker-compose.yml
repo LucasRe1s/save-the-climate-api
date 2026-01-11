@@ -20,6 +20,7 @@ services:
     environment:
       DATABASE_URL: postgresql://appuser:apppass@db:5432/appdb
       PORT: 3000
+      OPENWEATHER_API_KEY: "${OPENWEATHER_API_KEY}"
     depends_on:
       db:
         condition: service_healthy

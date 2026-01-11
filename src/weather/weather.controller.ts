@@ -10,11 +10,14 @@ import {
 import { WeatherQueryDto } from './dto/weather-query.dto';
 import { WeatherService } from './weather.service';
 import { ResponseWeatherDto } from './dto/weather-response.dto';
+import { ApiQuery, ApiTags } from '@nestjs/swagger';
 
+@ApiTags('Weather')
 @Controller('weathers')
 export class WeatherController {
   constructor(private readonly service: WeatherService) {}
   @Post()
+  @ApiQuery({ name: 'city, country', example: 'São Paulo, BR' })
   async getWeatherBy(
     @Query() query: WeatherQueryDto,
   ): Promise<ResponseWeatherDto> {
