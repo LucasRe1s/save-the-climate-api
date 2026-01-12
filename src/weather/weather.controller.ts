@@ -24,7 +24,7 @@ export class WeatherController {
     return new ResponseWeatherDto(await this.service.fetchAndSave(query));
   }
 
-  @Get('/all')
+  @Get()
   async findAll(): Promise<ResponseWeatherDto[]> {
     const data = await this.service.findAll();
     return data.map((item) => new ResponseWeatherDto(item));
