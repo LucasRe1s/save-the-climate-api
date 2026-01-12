@@ -68,6 +68,8 @@ docker compose up --build
 
 - API: [http://localhost:3000](http://localhost:3000)
 - Swagger: [http://localhost:3000/docs](http://localhost:3000/docs)
+![Swagger da API](docs/img/swagger.png)
+
 - PostgreSQL: localhost:5432
 
 ---
@@ -167,8 +169,6 @@ src/
 ---
 
 ## 🧪 Testes
-
-(Testes podem ser adicionados futuramente)
 
 ```bash
 npm run test

@@ -17,7 +17,7 @@ import { ApiQuery, ApiTags } from '@nestjs/swagger';
 export class WeatherController {
   constructor(private readonly service: WeatherService) {}
   @Post()
-  @ApiQuery({ name: 'city, country', example: 'São Paulo, BR' })
+  @ApiQuery({ name: 'city', example: 'São Paulo' })
   async getWeatherBy(
     @Query() query: WeatherQueryDto,
   ): Promise<ResponseWeatherDto> {
