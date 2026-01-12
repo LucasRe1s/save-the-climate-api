@@ -176,17 +176,6 @@ npm run test
 
 ---
 
-## 📝 Considerações Finais
-
-Este projeto demonstra:
-- Integração com API externa
-- Persistência relacional
-- Organização de código em camadas
-- Uso de Docker para padronização do ambiente
-- Clareza na documentação e uso do Git
-
----
-
 ## 📄 Licença
 
 Este projeto está sob licença MIT.
